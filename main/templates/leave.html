@@ -1,0 +1,22 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h2>Leave Count for all users per month</h2>
+<table>
+    <thead>
+    <tr>
+      <th>User</th>
+      <th>Month</th>
+      <th>Total Leave</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for data in leave_data %}
+    <tr>
+        <td>{{data.user_id.username}}</td>
+        <td>{{data.leave_month}}</td>
+        <td>{{data.total}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,2 +1,2 @@
 # leave-tracker
-Leave Tracker
+Leave tracker
